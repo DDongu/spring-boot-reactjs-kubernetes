@@ -1,8 +1,0 @@
-/home/ec2-user/spring-boot-reactjs-kubernetes/corona-tracker-backend/src/main/java/com/hackforfun/coronatrackerbackend/repository/CommentRepository.java
-/home/ec2-user/spring-boot-reactjs-kubernetes/corona-tracker-backend/src/main/java/com/hackforfun/coronatrackerbackend/MongoValidationConfig.java
-/home/ec2-user/spring-boot-reactjs-kubernetes/corona-tracker-backend/src/main/java/com/hackforfun/coronatrackerbackend/controller/CoronaTrackerController.java
-/home/ec2-user/spring-boot-reactjs-kubernetes/corona-tracker-backend/src/main/java/com/hackforfun/coronatrackerbackend/exception/CommentCollectionException.java
-/home/ec2-user/spring-boot-reactjs-kubernetes/corona-tracker-backend/src/main/java/com/hackforfun/coronatrackerbackend/model/Comment.java
-/home/ec2-user/spring-boot-reactjs-kubernetes/corona-tracker-backend/src/main/java/com/hackforfun/coronatrackerbackend/CoronaTrackerBackendApplication.java
-/home/ec2-user/spring-boot-reactjs-kubernetes/corona-tracker-backend/src/main/java/com/hackforfun/coronatrackerbackend/service/CommentService.java
-/home/ec2-user/spring-boot-reactjs-kubernetes/corona-tracker-backend/src/main/java/com/hackforfun/coronatrackerbackend/controller/CommentController.java
