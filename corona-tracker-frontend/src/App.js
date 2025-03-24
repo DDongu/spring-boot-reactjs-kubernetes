@@ -12,7 +12,7 @@ class App extends Component {
 
 
   componentWillMount() {
-    axios.get('http://localhost:8080/coronatracker/statisticsbycountry').then((response) => {
+    axios.get('http://43.201.67.124:8080/coronatracker/statisticsbycountry').then((response) => {
       //console.log(JSON.stringify(response.data))
       this.setState({
         countryWiseData: response.data.data

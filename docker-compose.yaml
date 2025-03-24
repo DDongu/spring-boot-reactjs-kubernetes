@@ -1,0 +1,47 @@
+version: "3.8"
+
+services:
+  frontend:
+    build: ./corona-tracker-frontend
+    container_name: corona-frontend
+    ports:
+      - "3000:3000"  # React 앱 실행
+    depends_on:
+      - backend
+    environment:
+      - REACT_APP_API_URL=http://backend:8080  # 백엔드 API 주소
+    networks:
+      - corona-network
+    restart: always
+
+  backend:
+    build: ./corona-tracker-backend
+    container_name: corona-backend
+    ports:
+      - "8080:8080"  # Spring Boot 실행
+    depends_on:
+      - mongo
+    environment:
+      - SPRING_DATA_MONGODB_URI=mongodb://mongo:27017/coronaDB
+    networks:
+      - corona-network
+    restart: always
+
+  mongo:
+    image: mongo:latest
+    container_name: corona-mongo
+    ports:
+      - "27017:27017"  # MongoDB 기본 포트
+    networks:
+      - corona-network
+    restart: always
+    volumes:
+      - mongo_data:/data/db
+
+networks:
+  corona-network:
+    driver: bridge
+
+volumes:
+  mongo_data:
+
